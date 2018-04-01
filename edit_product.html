@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Smart Cart</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+   <style>
+        .column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+            }
+    </style>
+  <script type="text/javascript">
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+  function clickAlert() {
+    alert("Product Edited!!");
+}
+</script>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Edit PRODUCT</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="column">
+                <label for="exampleInputName">Product Name</label>
+                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter Product Name">
+              </div>
+			  <br /><br />
+			  <div class="column">
+                <label for="exampleInputName">Add Image</label>
+                <input type='file' onchange="readURL(this);" />
+
+              </div>
+            </div>
+          </div>
+		   <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-12">
+                <label for="exampleInputName">Product ID</label>
+                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter Product ID">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Price</label>
+            <input class="form-control" id="exampleInputEmail1" type="number" aria-describedby="emailHelp" placeholder="Enter Price">
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputPassword1">Quantity</label>
+                <input class="form-control" id="exampleInputPassword1" type="number" placeholder="Enter Quantity">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleConfirmPassword">Product Description</label>
+                <input class="form-control" id="exampleConfirmPassword" type="text" placeholder="Enter Details">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" onclick="clickAlert()">Edit Product</a>
+		  <a class="btn btn-primary btn-block" href="index.html">Cancel</a>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+	<script>
+		window.$ = window.jQuery = require("jquery");
+	</script>
+  <script>
+		window.$ = window.jQuery = require("vendor/jquery/jquery.min.js");
+	</script>
+  <script>
+		window.$ = window.jQuery = require("vendor/bootstrap/js/bootstrap.bundle.min.js");
+	 </script>
+  <!-- Core plugin JavaScript-->
+  <script>
+		window.$ = window.jQuery = require("vendor/jquery-easing/jquery.easing.min.js");
+	</script>
+</body>
+
+</html>
